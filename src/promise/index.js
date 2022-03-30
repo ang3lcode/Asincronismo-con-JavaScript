@@ -31,3 +31,13 @@ const somethingWillHappen2 = () => {
 somethingWillHappen2 ()
 .then(response => console.log(response))
 .catch(err => console.log(err));
+
+
+Promise.all([somethingWillHappen(), somethingWillHappen2()])
+
+.then(response => {
+    console.log('array of results', response);
+})
+.catch(err => {
+    console.error(err);
+})
