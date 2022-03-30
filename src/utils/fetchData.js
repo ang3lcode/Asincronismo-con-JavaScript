@@ -1,11 +1,11 @@
 
 // modulos para hacer las peticiones//
-let XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
+let XMLHttpRequest = require ('xmlhttprequest').XMLHttpRequest;
 //funcion principal//
 const fetchData = (url_api) => {
     return new Promise ((resolve, reject) => {
         //instanciamos la conexion
-        const xhttp = new XMLHttpRequest();
+        const xhttp = new XMLHttpRequest (); 
         //abrir una conexion con el metodo, la ruta y su es asincrono//
         xhttp.open('GET', url_api, true);
         //validacion del llamado
